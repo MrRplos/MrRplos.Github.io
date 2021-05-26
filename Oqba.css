@@ -35,6 +35,10 @@
     border: 1px solid black;
     position: relative;
     left: 400px;
+    background-image: url(Pictures/background-button1.jpg);
+    background-repeat: no-repeat;
+    background-size: 50em;
+    background-position-x: -5em;
 }
 #player {
     width: 80px;
@@ -69,4 +73,8 @@
 @keyframes gameAnimation {
     0%{left: 1px;}
     100%{left:5px;}
+}
+ins {
+    width: 500px;
+    height: 500px;
 }
