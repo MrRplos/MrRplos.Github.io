@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#top {
+    width: auto;
+    height: 80px;
+    background-color: rgb(88, 60, 60);
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+#title {
+    color: rgb(201, 157, 157);
+    font-size: 60px;
+    position: relative;
+    top: 25px;
+    left: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: gameAnimation 10ms infinite linear;
+}
+#site1 {
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    position: relative;
+    left: 1200px;
+    bottom: 67px;
+    border: black 2px;
+    border-style: groove;
+    padding: 0px 5px 0px 5px;
+}
+.game {
+    padding-top: 50px;
+    width: 630px;
+    height: 360px;
+    border: 1px solid black;
+    position: relative;
+    left: 400px;
+}
+#player {
+    width: 80px;
+    height: 90px;
+    background-color: cadetblue;
+    position: relative;
+    top: 270px;
+    left: 60px;
+}
+.anima {
+    animation: jump 700ms;
+}
+#block {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    position: relative;
+    top: 237px;
+    left: 600px;
+    animation: block 2s infinite linear;
+}
+@keyframes jump{
+    0%{top: 270px;}
+    30%{top: 200px;}
+    70%{top: 200px;}
+    100%{top: 270px;}
+}
+@keyframes block{
+    0%{left:600px;}
+    100%{left:0px;}
+}
+@keyframes gameAnimation {
+    0%{left: 1px;}
+    100%{left:5px;}
+}
