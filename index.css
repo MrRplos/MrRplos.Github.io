@@ -1,9 +1,12 @@
 body {
-    background-color: cornflowerblue;
+    background-color: hsl(140, 73%, 43%);
+    width: 50em;
+    font-family: cursive;
 }
 * {
     padding: 0;
     margin: 0;
+    font-family: cursive;
 }
 li {
     font-size: 25px;
@@ -16,17 +19,30 @@ a {
     font-size: 100px;
     width: 500px;
     text-align: center;
-    background-color: rgb(23, 23, 146);
+    background-color: hsl(108, 91%, 29%);
     border-radius: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    position: relative;
+    left: 4.5em;
+    transition: 1s;
+}
+.h1:hover {
+    background-color: hsla(240, 91%, 29%, 0.575);
+    color: hsl(0, 82%, 18%);
+    border-radius: 5px;
+    width: 5.5em;
+    position: relative;
+    left: 2em;
 }
 .p1 {
     padding: 50px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-family: cursive;
+    position: relative;
+    left: 10em;
 }
 li {
     text-align: auto;
+    margin: 0 0 2em 0;
 }
 h3 {
     font-size: 50px;
@@ -41,13 +57,15 @@ h3 {
     text-align: center;
     border-radius: 50px;
     margin-bottom: 50px;
+    position: relative;
+    left: 32em;
 }
 #site2 {
     font-size: 20px;
     color: rgb(255, 0, 0);
     position: relative;
     left: 1200px;
-    bottom: 90px;
+    bottom: 152px;
     border: black 2px;
     border-style: dotted;
     padding: 0px 5px 0px 5px;
@@ -69,14 +87,13 @@ h3 {
     text-align: center;
     text-shadow: black;
     font-size: 120px;
-    font-family: 'Times New Roman', Times, serif;
     border: black solid 15px;
-    width: auto;
+    width: 10.99em;
     height: 150px;
     background: url(Pictures/tomato.jpg);
 }
 #aboutme {
-    width: auto;
+    width: 84.3em;
     height: 90px;
     background-color: rgb(88, 60, 60);
     padding-bottom: 50px;
@@ -88,4 +105,34 @@ h3 {
     left: -001px;
     top: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#sword1 {
+    width: 5em;
+    position: relative;
+    left: 15em;
+    bottom: 3.5em;
+    animation: spin infinite 5s linear;
+}
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+#blue {
+    background-color: blue;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    left: 70em;
+    bottom: 11em;
+}
+.blue-mode {
+    background-color: blue;
+}
+#bluetext {
+    position: absolute;
+    left: 69%;
+    bottom: 96%;
 }
