@@ -99,8 +99,9 @@ h3 {
     font-size: 120px;
     border: black solid 15px;
     width: 85%;
-    position: absolute;
-    left: 7.5%;
+    position: relative;
+    left: 1em;
+    top: 2em;
     height: 150px;
     background: url(Pictures/tomato.jpg);
     font-style: italic;
