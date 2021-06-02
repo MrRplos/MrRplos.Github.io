@@ -27,6 +27,25 @@ function play() {
     sound.play();
 }
 function blue() {
+    var green = document.getElementById('blue');
+    green.classList.toggle("green-mode");
     var blue = document.body;
     blue.classList.toggle("blue-mode");
 }
+function showMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("showmore");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Show more";
+      moreText.style.display = "none";
+      btnText.style.top = "33em";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Show less";
+      moreText.style.display = "block";
+      btnText.style.top = "100%";
+    }
+  }
