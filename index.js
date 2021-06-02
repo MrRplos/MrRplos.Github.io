@@ -36,16 +36,21 @@ function showMore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("showmore");
+    var tomato = document.getElementById('Mostthings');
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Show more";
       moreText.style.display = "none";
       btnText.style.top = "33em";
+      tomato.style.top = "7em";
+      tomato.style.transitionDuration = "500ms";
     } else {
       dots.style.display = "none";
       btnText.innerHTML = "Show less";
       moreText.style.display = "block";
       btnText.style.top = "100%";
+      tomato.style.top = "9.5em";
+      tomato.style.transitionDuration = "500ms";
     }
   }
