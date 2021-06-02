@@ -50,7 +50,7 @@ function showMore() {
       btnText.innerHTML = "Show less";
       moreText.style.display = "block";
       btnText.style.top = "100%";
-      tomato.style.top = "9.5em";
+      tomato.style.top = "6.5em";
       tomato.style.transitionDuration = "500ms";
     }
   }
