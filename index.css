@@ -1,12 +1,18 @@
+html {
+    width: 100%;
+    max-width: 100%;
+}
 body {
     background-color: hsl(140, 73%, 43%);
-    width: 50em;
+    width: 100%;
+    max-width: 100%;
     font-family: cursive;
 }
 * {
     padding: 0;
     margin: 0;
     font-family: cursive;
+    box-sizing: border-box;
 }
 li {
     font-size: 25px;
@@ -21,9 +27,10 @@ a {
     text-align: center;
     background-color: hsl(108, 91%, 29%);
     border-radius: 50px;
-    position: relative;
-    left: 4.5em;
+    position: absolute;
+    left: 28%;
     transition: 1s;
+    max-width: 5em;
 }
 .h1:hover {
     background-color: hsla(240, 91%, 29%, 0.575);
@@ -37,8 +44,11 @@ a {
     padding: 50px;
     font-size: 2em;
     font-family: cursive;
-    position: relative;
-    left: 10em;
+    position: absolute;
+    left: 25%;
+    top: 8em;
+    width: 25em;
+    margin-bottom: 1em;
 }
 li {
     text-align: auto;
@@ -54,19 +64,17 @@ h3 {
     background-repeat: repeat;
 }
 #apple {
-    text-align: center;
     border-radius: 50px;
     margin-bottom: 50px;
     position: relative;
-    left: 32em;
     transition: 1s;
 }
 #site2 {
     font-size: 20px;
     color: rgb(255, 0, 0);
-    position: relative;
-    left: 1200px;
-    bottom: 8.1em;
+    position: absolute;
+    left: 90%;
+    bottom: 95%;
     border: black 2px;
     border-style: groove;
     padding: 0px 5px 0px 5px;
@@ -85,16 +93,21 @@ h3 {
 }
 #Mostthings {
     margin-top: 25px;
+    margin-bottom: 0.67em;
     text-align: center;
     text-shadow: black;
     font-size: 120px;
     border: black solid 15px;
-    width: 10.99em;
+    width: 85%;
+    position: absolute;
+    left: 7.5%;
     height: 150px;
     background: url(Pictures/tomato.jpg);
+    font-style: italic;
+    padding-bottom: 2.8em;
 }
 #aboutme {
-    width: 84.3em;
+    width: 100%;
     height: 90px;
     background-color: rgb(88, 60, 60);
     padding-bottom: 50px;
@@ -102,9 +115,8 @@ h3 {
 }
 #pagetitle {
     font-size: 80px;
-    position: relative;
-    left: -001px;
-    top: 25px;
+    position: absolute;
+    left: 0%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 @keyframes spin { 
@@ -118,9 +130,9 @@ h3 {
     background-color: hsl(0, 0%, 66%);
     width: 2em;
     height: 2em;
-    position: relative;
-    left: 70em;
-    bottom: 12em;
+    position: absolute;
+    left: 66.5%;
+    bottom: 95%;
 }
 .blue-mode {
     background-color: hsl(0, 0%, 66%);
@@ -131,7 +143,6 @@ h3 {
     bottom: 96%;
 }
 #blue:hover {
-    
     animation: blueanimation 1s linear;
 }
 #blue:active {
@@ -139,8 +150,74 @@ h3 {
 }
 #sword1 {
     width: 6em;
-    position: relative;
-    left: 14.5em;
-    bottom: 3.5em;
+    position: absolute;
+    left: 22.5%;
+    bottom: 86%;
     animation: spin infinite 1s linear;
+}
+#showmore {
+    font-size: 1em;
+    position: absolute;
+    top: 33em;
+    left: 30%;
+    width: 15em;
+    height: 5.5em;
+    background-color: hsl(133, 90%, 45%);
+    border: hsl(133, 91%, 37%) solid 7.5px;
+    transition: 500ms;
+    cursor: pointer;
+    float: left;
+}
+#showmore:hover {
+    background-color: hsl(133, 90%, 55%);
+    border: hsl(133, 100%, 37%) solid 7.5px;
+    width: 16em;
+    height: 6.5em;
+}
+#youtube {
+    width: 30%;
+    transition: 1s;
+}
+#more {
+    display: none;
+
+}
+#sa {
+    border-radius: 0.5em;
+    width: 12em;
+    position: absolute;
+    left: 80%;
+    top: 90%;
+    transition: 1s;
+}
+#sa:hover {
+    width: 13.5em;
+}
+@media only screen and (max-width: 709px) {
+    .p1 {
+        width: 50%;
+        font-size: 1em;
+        position: absolute;
+        top: 43%;
+    }
+    #showmore {
+        width: 10em;
+    }
+    #showmore:hover {
+        width: 13.56em;
+    }
+    #Mostthings {
+        font-size: 3em;
+        position: absolute;
+        top: 120%;
+    }
+    #sa {
+        width: 10%;
+    }
+    #bluetext {
+        font-size: 0.5em;
+    }
+}
+#youtube:hover {
+    width: 35%;
 }
